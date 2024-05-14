@@ -1,12 +1,22 @@
-name: Continuos Integrations
+name: CI
 
-on: [pull_request, push]
+on:
+  push:
+    branches:
+      - main
 
-jobs: 
-  continuos-integrations:
+jobs:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - name: Using site_teste
-        
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      run: |
+        npm install
+
+    - name: Build
+      run: |
+        npm run build
