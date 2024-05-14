@@ -1,0 +1,12 @@
+name: Continuos Integrations
+
+on: [pull_request, push]
+
+jobs: 
+  continuos-integrations:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Using site_teste
+        
