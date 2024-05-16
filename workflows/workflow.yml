@@ -6,17 +6,4 @@ on:
       - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Install Dependencies
-      run: |
-        npm install
-
-    - name: Build
-      run: |
-        npm run build
+  
