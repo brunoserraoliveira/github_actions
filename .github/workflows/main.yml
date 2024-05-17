@@ -24,5 +24,5 @@ jobs:
           context: .
           push: true
           tags: |
-            brunoserraoliveira/github_actions:v1
-            brunoserraoliveira/github_actions:latest
+            brunoserraoliveira/teste_ci:v1
+            brunoserraoliveira/este_ci:latest
